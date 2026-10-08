@@ -1,0 +1,52 @@
+{
+  "umd:name": "count",
+  "version": "1.0.0",
+  "name": "@tkh44/count",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkh44/count.git"
+  },
+  "description": "A tiny utility to shorten big numbers (12,669,477,740 -> 12B) and parse them back.",
+  "unpkg": "dist/index.min.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Kye Hohenberger",
+    "email": "kye@tkh44.com"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "bundt",
+    "test": "npm run build && uvu test"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "keywords": [
+    "number",
+    "count",
+    "shorten",
+    "abbreviate",
+    "compact",
+    "humanize",
+    "format",
+    "parse"
+  ],
+  "devDependencies": {
+    "bundt": "1.1.2",
+    "uvu": "0.5.1"
+  }
+}
